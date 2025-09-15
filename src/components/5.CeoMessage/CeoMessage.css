@@ -1,0 +1,112 @@
+.ceo-section {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  text-align: left;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.ceo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.ceo-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #246b45;
+}
+
+.ceo-message {
+  background-color: #f9f9f9;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ceo-message_content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.ceo-message_image {
+  flex: 1;
+  text-align: center;
+}
+
+.ceo-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.ceo-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ceo-signature {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Brush Script MT", cursive;
+}
+
+.ceo-message_text {
+  flex: 2;
+  text-align: center;
+}
+
+.ceo-message_title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #246b45;
+  margin-bottom: 25px;
+}
+
+.ceo-message p {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.ceo-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #246b45;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.ceo-button:hover {
+  background-color: #1f5d39;
+}
+
+@media (max-width: 900px) {
+  .ceo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-message_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-message_text {
+    text-align: center;
+  }
+}

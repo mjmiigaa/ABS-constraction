@@ -1,0 +1,123 @@
+/* Main header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw; /* Ensure header spans the full width of the viewport */
+  height: auto; /* Adjust height dynamically */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Logo section */
+.header_left .logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header_logo {
+  height: 40px;
+  width: auto;
+}
+.header_nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end; /* Align navigation to the right */
+  margin-right: 100px; /* Adjust margin for better alignment */
+}
+/* Navigation */
+.header_nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusted spacing */
+  gap: 15px; /* Increased gap */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header_nav li {
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.header_nav li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 5px 15px; /* Increased padding */
+  white-space: nowrap;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header_nav li a:hover {
+  color: #007bff;
+}
+
+/* Burger menu styles */
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  top: 10px;
+  right: 20px; /* Position the burger menu on the right side */
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%; /* Ensure header fits screen width */
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .header_nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .header_nav.open {
+    display: flex;
+  }
+
+  .header_nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .header_nav li {
+    width: 100%;
+  }
+
+  .header_nav li a {
+    font-size: 14px;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+  }
+}
