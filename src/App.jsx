@@ -5,13 +5,11 @@ import Project from "./components/4.Project/Project";
 import CeoMessage from "./components/5.CeoMessage/CeoMessage";
 import Contact from "./components/6.Contact/Contact";
 import Footer from "./components/7.Footer/Footer";
-import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
     <>
       <Header />
-      <Analytics />
       <Hero />
       <Service />
       <Project />
