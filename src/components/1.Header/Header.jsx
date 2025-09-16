@@ -20,7 +20,7 @@ const Header = () => {
     <header className="header">
       <div className="header_left">
         <a href="#home" className="logo">
-          <img src="/public/assets/logo.png" alt="Logo" className="header_logo" />
+          <img src="/assets/logo.png" alt="Logo" className="header_logo" />
            </a>
       </div>
           <button className="burger-menu" onClick={toggleMenu}>
