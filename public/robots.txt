@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abs-constraction.vercel.app/sitemap.xml
